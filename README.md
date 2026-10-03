@@ -51,3 +51,10 @@ The system reads motion data from the MPU6050, estimates platform tilt, applies 
 MATLAB was also used during development to study controller response and support tuning.
 
 ![PD Controller Response](images/pd_response.png)
+
+## Challenges and Learnings
+
+- Tuned PD gains to improve stability while limiting oscillation and overshoot.
+- Worked through MPU6050 sensor-axis orientation and mounting configuration issues.
+- Addressed stepper-motor backlash and mechanical mounting limitations.
+- Reduced excessive back-and-forth motor motion through timing adjustments and controller tuning.
