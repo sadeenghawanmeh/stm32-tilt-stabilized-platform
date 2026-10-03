@@ -34,5 +34,3 @@ The system measures platform tilt, estimates orientation using a complementary f
 ## Project Overview
 
 The system reads motion data from the MPU6050, estimates platform tilt, applies feedback control, and generates motor commands to stabilize the platform in real time.
-
-Additional project details, source code, system diagrams, and test results will be added as the repository is organized.
