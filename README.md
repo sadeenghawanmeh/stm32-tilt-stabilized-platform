@@ -58,3 +58,26 @@ MATLAB was also used during development to study controller response and support
 - Worked through MPU6050 sensor-axis orientation and mounting configuration issues.
 - Addressed stepper-motor backlash and mechanical mounting limitations.
 - Reduced excessive back-and-forth motor motion through timing adjustments and controller tuning.
+
+## Repository Structure
+
+```text
+Core/
+├── Inc/
+├── Src/
+└── Startup/
+
+Drivers/
+├── CMSIS/
+└── STM32F4xx_HAL_Driver/
+
+images/
+├── block_diagram.png
+└── pd_response.png
+
+Tilt_Project.ioc
+STM32F407VGTX_FLASH.ld
+STM32F407VGTX_RAM.ld
+.project
+.cproject
+README.md
