@@ -43,7 +43,7 @@ The system reads motion data from the MPU6050, estimates platform tilt, applies 
 
 - The platform responded effectively to external tilts.
 - Some oscillation was observed during controller tuning, but performance improved through gain adjustment and filtering.
-- The final embedded implementation used a PD controller with:
+- The final embedded implementation used PD gains of:
   - **Kp = 1.0**
   - **Kd = 0.01**
 - The final system demonstrated stable behavior and successful tilt correction along the tested axis.
