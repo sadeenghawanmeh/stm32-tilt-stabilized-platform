@@ -34,3 +34,20 @@ The system measures platform tilt, estimates orientation using a complementary f
 ## Project Overview
 
 The system reads motion data from the MPU6050, estimates platform tilt, applies feedback control, and generates motor commands to stabilize the platform in real time.
+
+## System Architecture
+
+![System Architecture](images/block_diagram.png)
+
+## Results and Testing
+
+- The platform responded effectively to external tilts.
+- Some oscillation was observed during controller tuning, but performance improved through gain adjustment and filtering.
+- The final embedded implementation used a PD controller with:
+  - **Kp = 1.0**
+  - **Kd = 0.01**
+- The final system demonstrated stable behavior and successful tilt correction along the tested axis.
+
+MATLAB was also used during development to study controller response and support tuning.
+
+![PD Controller Response](images/pd_response.png)
