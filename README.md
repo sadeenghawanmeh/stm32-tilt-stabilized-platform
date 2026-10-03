@@ -1,14 +1,15 @@
 # STM32 Tilt-Stabilized Platform
 
 Real-time closed-loop tilt stabilization system built using an STM32F407 microcontroller, MPU6050 IMU, and motor actuation.
+The system measures platform tilt, estimates orientation using a complementary filter, and applies PD feedback control to correct the tilt in real time.
 
 ## Features
 
 - STM32F407 embedded firmware
 - MPU6050 communication over I2C
-- Real-time pitch and roll estimation
-- Feedback control
-- PWM-based motor actuation
+- Complementary filter for tilt estimation
+- PD feedback controller
+- PWM-based stepper motor actuation
 - UART debugging
 - LCD monitoring
 
